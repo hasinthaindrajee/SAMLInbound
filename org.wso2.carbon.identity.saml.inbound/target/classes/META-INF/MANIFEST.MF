@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1486472490518
+Build-Jdk: 1.8.0_111
+Built-By: hasinthaindrajee
+Bundle-Contributors: WSO2 Inc
+Bundle-Copyright: WSO2 Inc
+Bundle-Description: WSO2 is an open source application development softw
+ are company focused on providing service-orientedarchitecture solutions
+  for professional developers.
+Bundle-Developers: WSO2 Inc
+Bundle-DocURL: https://docs.wso2.com
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: org.wso2.carbon.identity.saml.inbound
+Bundle-SymbolicName: org.wso2.carbon.identity.saml.inbound
+Bundle-Vendor: WSO2 Inc
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: org.wso2.carbon.identity.saml.inbound;version="1.0.0",or
+ g.wso2.carbon.identity.saml.inbound.builders;version="1.0.0",org.wso2.c
+ arbon.identity.saml.inbound.builders.assertion;version="1.0.0";uses:="o
+ rg.wso2.carbon.identity.saml.inbound.context",org.wso2.carbon.identity.
+ saml.inbound.builders.encryption;version="1.0.0",org.wso2.carbon.identi
+ ty.saml.inbound.builders.signature;version="1.0.0",org.wso2.carbon.iden
+ tity.saml.inbound.context;version="1.0.0";uses:="org.wso2.carbon.identi
+ ty.gateway.api,org.wso2.carbon.identity.saml.inbound.model,org.wso2.car
+ bon.identity.saml.inbound.request",org.wso2.carbon.identity.saml.inboun
+ d.exception;version="1.0.0";uses:="org.wso2.carbon.identity.gateway.api
+ ",org.wso2.carbon.identity.saml.inbound.model;version="1.0.0",org.wso2.
+ carbon.identity.saml.inbound.request;version="1.0.0";uses:="org.wso2.ca
+ rbon.identity.gateway.api,org.wso2.carbon.identity.gateway.processor.re
+ quest",org.wso2.carbon.identity.saml.inbound.response;version="1.0.0";u
+ ses:="org.wso2.carbon.identity.gateway.api,org.wso2.carbon.identity.gat
+ eway.processor.handler.response,org.wso2.carbon.identity.saml.inbound.c
+ ontext",org.wso2.carbon.identity.saml.inbound.util;version="1.0.0";uses
+ :="org.osgi.framework,org.wso2.carbon.identity.saml.inbound.context,org
+ .wso2.carbon.identity.saml.inbound.exception,org.wso2.carbon.identity.s
+ aml.inbound.model",org.wso2.carbon.identity.saml.inbound.validator;vers
+ ion="1.0.0";uses:="org.wso2.carbon.identity.gateway.api,org.wso2.carbon
+ .identity.gateway.context,org.wso2.carbon.identity.gateway.processor.ha
+ ndler.request",org.wso2.carbon.identity.saml.inbound.validators;version
+ ="1.0.0";uses:="org.wso2.carbon.identity.gateway.api,org.wso2.carbon.id
+ entity.gateway.context,org.wso2.carbon.identity.gateway.processor.handl
+ er.request,org.wso2.carbon.identity.saml.inbound.context,org.wso2.carbo
+ n.identity.saml.inbound.exception,org.wso2.carbon.identity.saml.inbound
+ .request"
+Import-Package: org.osgi.framework;version="[1.8.0,2.0.0)",org.wso2.carb
+ on.identity.gateway.api;version="[1.0.0,2.0.0)",org.wso2.carbon.identit
+ y.gateway.context;version="[1.0.0,2.0.0)",org.wso2.carbon.identity.gate
+ way.processor.handler.request;version="[1.0.0,2.0.0)",org.wso2.carbon.i
+ dentity.gateway.processor.handler.response;version="[1.0.0,2.0.0)",org.
+ wso2.carbon.identity.gateway.processor.request;version="[1.0.0,2.0.0)"
+Provide-Capability: osgi.service;objectClass:List<String>="org.osgi.fram
+ ework.BundleActivator"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+SCM-Revision: 20170207-1831
+Service-Component: OSGI-INF/org.wso2.carbon.identity.saml.inbound.compon
+ ent.xml
+Tool: Bnd-3.0.0.201509101326
