@@ -20,7 +20,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/org.wso2.carbon.identity.saml.inbound.GreeterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/org.wso2.carbon.identity.saml.inbound.GreeterTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="org.wso2.carbon.identity.saml.inbound.iws" />
@@ -749,7 +748,7 @@
       <created>1486528295862</created>
       <option name="number" value="Default" />
       <updated>1486528295862</updated>
-      <workItem from="1486528297655" duration="11064000" />
+      <workItem from="1486528297655" duration="11079000" />
     </task>
     <task id="LOCAL-00001" summary="saml idp initiated login">
       <created>1486614879005</created>
@@ -757,11 +756,17 @@
       <option name="project" value="LOCAL" />
       <updated>1486614879005</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="saml idp initiated login">
+      <created>1486614890209</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486614890209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11064000" />
+    <option name="totallyTimeSpent" value="11079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
