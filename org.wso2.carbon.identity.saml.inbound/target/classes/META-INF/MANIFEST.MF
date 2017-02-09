@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1486472490518
+Bnd-LastModified: 1486554883656
 Build-Jdk: 1.8.0_111
 Built-By: hasinthaindrajee
 Bundle-Contributors: WSO2 Inc
@@ -54,7 +54,7 @@ Import-Package: org.osgi.framework;version="[1.8.0,2.0.0)",org.wso2.carb
 Provide-Capability: osgi.service;objectClass:List<String>="org.osgi.fram
  ework.BundleActivator"
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
-SCM-Revision: 20170207-1831
+SCM-Revision: abfeb8fd1c57cb9e96eb5200d8c8312fc6e03eaa
 Service-Component: OSGI-INF/org.wso2.carbon.identity.saml.inbound.compon
  ent.xml
 Tool: Bnd-3.0.0.201509101326

@@ -25,6 +25,7 @@ import org.wso2.carbon.identity.gateway.processor.handler.request.AbstractReques
 import org.wso2.carbon.identity.gateway.processor.handler.response.AbstractResponseHandler;
 import org.wso2.carbon.identity.saml.inbound.request.SAMLIdentityRequestFactory;
 import org.wso2.carbon.identity.saml.inbound.response.HttpSAMLResponseFactory;
+import org.wso2.carbon.identity.saml.inbound.response.SAMLIdpInitResponseHandler;
 import org.wso2.carbon.identity.saml.inbound.response.SAMLSPInitResponseHandler;
 import org.wso2.carbon.identity.saml.inbound.validator.IDPInitSAMLValidator;
 import org.wso2.carbon.identity.saml.inbound.validator.SPInitSAMLValidator;
@@ -45,6 +46,7 @@ public class Activator implements BundleActivator {
             bundleContext.registerService(AbstractRequestHandler.class, new IDPInitSAMLValidator(), null);
 
             bundleContext.registerService(AbstractResponseHandler.class, new SAMLSPInitResponseHandler(), null);
+            bundleContext.registerService(AbstractResponseHandler.class, new SAMLIdpInitResponseHandler(), null);
         } catch (Throwable e) {
             System.out.println("Error while activating component");
         }

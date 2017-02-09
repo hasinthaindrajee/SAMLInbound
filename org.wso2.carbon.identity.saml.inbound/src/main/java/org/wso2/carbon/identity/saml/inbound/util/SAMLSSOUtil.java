@@ -46,7 +46,6 @@ import org.opensaml.xml.io.Unmarshaller;
 import org.opensaml.xml.io.UnmarshallerFactory;
 import org.opensaml.xml.util.Base64;
 import org.osgi.framework.BundleContext;
-import org.osgi.service.http.HttpService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
@@ -56,7 +55,6 @@ import org.w3c.dom.ls.DOMImplementationLS;
 import org.w3c.dom.ls.LSOutput;
 import org.w3c.dom.ls.LSSerializer;
 import org.wso2.carbon.identity.common.base.exception.IdentityException;
-import org.wso2.carbon.identity.gateway.common.model.ServiceProvider;
 import org.wso2.carbon.identity.saml.inbound.SAMLSSOConstants;
 import org.wso2.carbon.identity.saml.inbound.builders.assertion.DefaultSAMLAssertionBuilder;
 import org.wso2.carbon.identity.saml.inbound.builders.assertion.SAMLAssertionBuilder;
@@ -690,7 +688,7 @@ public class SAMLSSOUtil {
         String idPEntityId = null;
         //IdentityProvider identityProvider;
         int tenantId;
-
+        // TODO
 //        if (StringUtils.isEmpty(tenantDomain) || "null".equals(tenantDomain)) {
 //            tenantDomain = MultitenantConstants.SUPER_TENANT_DOMAIN_NAME;
 //            tenantId = MultitenantConstants.SUPER_TENANT_ID;
@@ -1026,10 +1024,11 @@ public class SAMLSSOUtil {
         serviceProvider.setAssertionConsumerUrl("http://localhost:8080/travelocity.com/home.jsp");
         serviceProvider.setDefaultAssertionConsumerUrl("http://localhost:8080/travelocity.com/home.jsp");
         List assertionConsumerURLs = new ArrayList<>();
-        assertionConsumerURLs.add("http://localhost:8080/travelocity.com/home.jsp") ;
+        assertionConsumerURLs.add("http://localhost:8080/travelocity.com/home.jsp");
         serviceProvider.setAssertionConsumerUrls(assertionConsumerURLs);
-        serviceProvider.setAssertionConsumerUrls(new String[] {"http://localhost:8080/travelocity.com/home.jsp"});
+        serviceProvider.setAssertionConsumerUrls(new String[]{"http://localhost:8080/travelocity.com/home.jsp"});
         serviceProvider.setDoEnableEncryptedAssertion(false);
+        serviceProvider.setIdPInitSSOEnabled(true);
         return serviceProvider;
 //        try {
 //            SSOServiceProviderConfigManager stratosIdpConfigManager = SSOServiceProviderConfigManager

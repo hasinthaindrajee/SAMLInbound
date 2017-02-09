@@ -11,6 +11,7 @@ import org.wso2.carbon.identity.gateway.processor.handler.response.ResponseExcep
 import org.wso2.carbon.identity.saml.inbound.SAMLSSOConstants;
 import org.wso2.carbon.identity.saml.inbound.context.SAMLMessageContext;
 import org.wso2.carbon.identity.saml.inbound.request.SAMLIdentityRequest;
+import org.wso2.carbon.identity.saml.inbound.request.SAMLSpInitRequest;
 
 public class SAMLSPInitResponseHandler extends AbstractResponseHandler {
 
@@ -83,9 +84,12 @@ public class SAMLSPInitResponseHandler extends AbstractResponseHandler {
         }
     }
 
+
+
+
     public boolean canHandle(MessageContext messageContext) {
         if (messageContext instanceof AuthenticationContext) {
-            return ((AuthenticationContext) messageContext).getIdentityRequest() instanceof SAMLIdentityRequest;
+            return ((AuthenticationContext) messageContext).getIdentityRequest() instanceof SAMLSpInitRequest;
         }
         return false;
     }
